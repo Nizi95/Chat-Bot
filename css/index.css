@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+@import "reset.css";
+
+.app {
+  width: 100%;
+  display: flex;
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../font/Roboto/Roboto-Bold.ttf");
+}
+/*ASIDE*/
+.aside {
+  background-color: #0d0d0d;
+  width: 30%;
+  font-family: Roboto-Bold;
+}
+/*
+ * Profil
+ */
+.profil {
+  border-bottom: 1px groove white;
+  padding: 2%;
+}
+.profil_avatar {
+  display: flex;
+  justify-content: center;
+}
+.profil span {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  font-family: Roboto-Bold;
+}
+/*
+ * Contact
+ */
+.profil_contact {
+  display: flex;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+}
+.contact_name {
+  flex-grow: 1;
+  margin-left: 9px;
+}
+span {
+  font-size: 20px;
+  color: white;
+}
+.number {
+  border-radius: 50%;
+  background-color: #36b621;
+  padding: 8px;
+  font-size: 24px;
+}
+.image_avatar img {
+  border-radius: 50%;
+  width: 50px;
+}
+/*
+ * Messages
+ */
+section {
+  background-color: black;
+  clear: both;
+  overflow: scroll;
+  height: 821px;
+}
+
+.messages {
+  font-family: Roboto-Bold;
+  font-size: 15px;
+
+}
+.messages--received {
+  clear: both;
+  display: flex;
+  margin-top: 3%;
+}
+.messages--received-avatar img {
+  width: 60px;
+  margin: 2px auto auto 10px;
+}
+
+.messages--received-text p {
+  background-color: #5ac948;
+  width:35%;
+  border-radius: 2px 30px 30px 30px;
+  padding: 1%;
+  margin-left: 40px;
+  color: white;
+}
+.messages--to-send {
+  clear: both;
+  display: block;
+  margin-top: 5%;
+}
+.messages--to-send-avatar img {
+  width: 60px;
+  float: right;
+}
+
+.messages--to-send-text p {
+  background-color: #0080ed;
+  width:35%;
+  border-radius: 30px 2px 30px 30px;
+  padding: 1%;
+  margin-right:40px;
+  color: white;
+  float: right;
+}
+/*
+ * CHAMPS D'ENVOI
+ */
+/*.input--message .input--message-field {
+ /* margin: 10% 25% auto 25%;*/
+  
+.input--message{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  /*width: 100%; */
+}
+
+/*.input--message input button {
+  clear: both;
+  display: flex;
+}*/
+.input--message input{
+  padding:15px;
+  border-radius: 100px;
+  border:1px solid white;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  border-radius: 100px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+/*
+ * RESPONSIVE
+ */
+
+ @media screen and (max-width: 640px) {
+ .profil span {
+  font-size: 2vw;
+}
+}
+
+ 
+
+
+
+
+
+
+
